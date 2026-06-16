@@ -1,0 +1,79 @@
+.landing-page {
+  --lp-accent: #d4742c;
+  --lp-glass: rgba(25, 25, 35, 0.78);
+
+  background-color: #0a0a12;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ddd5ca;
+  font-variant: small-caps;
+}
+
+.landing-page a {
+  color: var(--lp-accent);
+  text-decoration: none;
+}
+
+.landing-page a:hover {
+  color: #e8924a;
+  text-decoration: underline;
+}
+
+.landing-glass {
+  background: var(--lp-glass);
+  background-image: url("hero-painting.jpg") ;
+  background-size: cover; 
+  background-position: center 20%;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.landing-accent {
+  color: var(--lp-accent);
+}
+
+.landing-hero-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.landing-divider {
+  border-color: var(--lp-accent);
+  opacity: 0.45;
+  max-width: 480px;
+}
+
+.landing-cta {
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+  letter-spacing: 0.05em;
+  transition: all 0.25s ease;
+}
+
+.landing-cta:hover {
+  border-color: rgb(255, 255, 255);
+  color: #fff;
+}
+
+.landing-person-photo {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.section-light {
+  background-color: #ffffff77;
+}
+
+.section-dark {
+  background-color: #ffffffaa;
+}
+
+.section-darker {
+  background-color: #ffffffbb;
+}
