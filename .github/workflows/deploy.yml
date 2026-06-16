@@ -41,7 +41,7 @@ jobs:
           VITE_SUPABASE_TABLE_NAME: ${{ secrets.VITE_SUPABASE_TABLE_NAME }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           # Change this path if your build output folder is different (e.g., 'dist', 'build', 'out')
           path: ./dist
