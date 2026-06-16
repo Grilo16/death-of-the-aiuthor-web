@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
-  base: "/response-graphs/",
+  base: "/death-of-the-aiuthor-web/",
   plugins: [react()],
   resolve: {
     alias: {
