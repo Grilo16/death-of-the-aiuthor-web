@@ -4,6 +4,7 @@ import { AppProviders } from "./app/providers";
 import { App } from "./app/App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppProviders>
