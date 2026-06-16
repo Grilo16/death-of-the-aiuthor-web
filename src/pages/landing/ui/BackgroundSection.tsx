@@ -6,7 +6,7 @@ export function BackgroundSection() {
       <Container>
         <Row className="justify-content-center">
           <Col md={10} lg={7}>
-            <Card className="rounded-4 border-0" style={{backgroundColor: "#ffffffdd"}}>
+            <Card className="rounded-4 border-0" style={{backgroundColor: "#000000FF", color: "white"}}>
               <CardBody className="p-4 p-md-5">
                 <h2 className="mb-4">background</h2>
                 <p>
