@@ -4,7 +4,7 @@ import { Section } from "@/shared/ui";
 export function SummarySection() {
   return (
     <Section
-      bgOpacity="darker"
+      bgOpacity="light"
       animation="fade-up"
       className=" d-flex align-items-center py-5"
     >

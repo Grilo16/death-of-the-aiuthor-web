@@ -22,13 +22,20 @@
 }
 
 .landing-glass {
-  background: var(--lp-glass);
-  background-image: url("/hero-painting.jpg");
-  background-size: cover; 
-  background-position: center 20%;
+  background: var(--lp-glass) url("/hero-painting.jpg") 35% bottom / cover no-repeat;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.landing-hero-row {
+  height: 80vmin;
+}
+
+@media (max-width: 767px) {
+  .landing-hero-row {
+    height: 80vh;
+  }
 }
 
 .landing-accent {

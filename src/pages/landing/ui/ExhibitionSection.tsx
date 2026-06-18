@@ -4,7 +4,7 @@ import { Section } from "@/shared/ui";
 
 export function ExhibitionSection() {
   return (
-    <Section bgOpacity="light">
+    <Section bgOpacity="dark">
       <Row className="justify-content-center text-center">
         <Col md={8} lg={6}>
           <img

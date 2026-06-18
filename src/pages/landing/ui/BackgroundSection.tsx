@@ -6,9 +6,9 @@ export function BackgroundSection() {
       <Container>
         <Row className="justify-content-center">
           <Col md={10} lg={7}>
-            <Card className="rounded-4 border-0" style={{backgroundColor: "#000000AA", color: "white"}}>
+            <Card className="rounded-4 border-0" style={{backgroundColor: "#000000AA", color: "#bdbdbd"}}>
               <CardBody className="p-4 p-md-5">
-                <h2 className="mb-4">background</h2>
+                <h2 className="mb-4" style={{color:"white"}}>background</h2>
                 <p>
                   The property 'human-made' is poised to become increasingly
                   valuable in a world where AI generated content saturates
