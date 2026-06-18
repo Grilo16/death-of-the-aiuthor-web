@@ -1,5 +1,5 @@
 import { HeroSection } from "./HeroSection";
-import { ExhibitionSection } from "./ExhibitionSection";
+import { OldExhibitionSection } from "./OldExhibitionSection";
 import { SurveyResultsSection } from "./SurveyResultsSection";
 import { BackgroundSection } from "./BackgroundSection";
 import { PeopleSection } from "./PeopleSection";
@@ -7,6 +7,7 @@ import { ContactSection } from "./ContactSection";
 import spaceBg from "@/assets/images/space-bg.jpg";
 import "./landing.css";
 import { SummarySection } from "./SummarySection";
+import { ExhibitionSection } from "./ExhibitionSection";
 
 export function LandingPage() {
   return (
@@ -17,9 +18,10 @@ export function LandingPage() {
       <HeroSection />
       <SummarySection/>
       <ExhibitionSection />
-      <SurveyResultsSection />
       <BackgroundSection />
+      <SurveyResultsSection />
       <PeopleSection />
+      <OldExhibitionSection />
       <ContactSection />
     </div>
   );

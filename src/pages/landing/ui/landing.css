@@ -1,7 +1,8 @@
 .landing-page {
   --lp-accent: #d4742c;
   --lp-glass: rgba(25, 25, 35, 0.78);
-
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: #0a0a12;
   background-size: cover;
   background-position: center;
