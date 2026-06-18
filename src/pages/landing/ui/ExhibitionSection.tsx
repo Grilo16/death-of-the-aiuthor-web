@@ -10,12 +10,11 @@ export function ExhibitionSection() {
           <img
             style={{
               backgroundColor: "white",
-              scale: ".4",
-              marginBottom: "-4rem",
+              width: "25rem",
             }}
             src={exhibitionImg}
             alt="Exhibition artwork"
-            className="img-fluid rounded-3"
+            className="img-fluid mb-3 rounded-3"
           />
 
           <h2 className="mb-1">The Exhibition</h2>
