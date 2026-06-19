@@ -1,6 +1,6 @@
 import { HeroSection } from "./HeroSection";
 import { OldExhibitionSection } from "./OldExhibitionSection";
-import { SurveyResultsSection } from "./SurveyResultsSection";
+import { SurveyInsightsSection } from "./SurveyInsightsSection";
 import { BackgroundSection } from "./BackgroundSection";
 import { PeopleSection } from "./PeopleSection";
 import { ContactSection } from "./ContactSection";
@@ -16,10 +16,10 @@ export function LandingPage() {
       style={{ backgroundImage: `url(${spaceBg})` }}
     >
       <HeroSection />
-      <SummarySection/>
+      <SummarySection />
       <ExhibitionSection />
       <BackgroundSection />
-      <SurveyResultsSection />
+      <SurveyInsightsSection />
       <PeopleSection />
       <OldExhibitionSection />
       <ContactSection />

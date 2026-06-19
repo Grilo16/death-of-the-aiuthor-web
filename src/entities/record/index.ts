@@ -8,14 +8,16 @@ export type {
   Demographics,
   CreatorType,
   Metric,
-  LikertLabel,
-  LikertDistributionDatum,
-  AverageDeltaDatum,
 } from "./model/types";
 
 export {
   selectAllSubmissions,
-  selectLikertDistribution,
-  selectAverageDelta,
-  selectDistributionByDemographic,
+  selectOpinionChange,
+  selectFirstImpression,
+  selectAiChangeByAge,
 } from "./model/selectors";
+
+export type {
+  CreatorStatementDatum,
+  AiChangeByAgeDatum,
+} from "./model/analytics";
