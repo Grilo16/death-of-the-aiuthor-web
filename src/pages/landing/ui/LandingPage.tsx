@@ -8,6 +8,7 @@ import spaceBg from "@/assets/images/space-bg.jpg";
 import "./landing.css";
 import { SummarySection } from "./SummarySection";
 import { ExhibitionSection } from "./ExhibitionSection";
+import { Footer } from "./Footer";
 
 export function LandingPage() {
   return (
@@ -23,6 +24,7 @@ export function LandingPage() {
       <PeopleSection />
       <OldExhibitionSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

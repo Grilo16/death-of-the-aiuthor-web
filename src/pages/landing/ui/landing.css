@@ -37,6 +37,15 @@
   z-index: 1;
 }
 
+.landing-footer-link {
+  color: #a8a8a8;
+  transition: color 0.2s ease;
+}
+
+.landing-footer-link:hover {
+  color: var(--lp-accent);
+}
+
 .landing-page a {
   color: var(--lp-accent);
   text-decoration: none;
