@@ -4,6 +4,7 @@ import { Section, LiveDataMeta } from "@/shared/ui";
 import { OpinionChangeWidget } from "@/widgets/opinion-change";
 import { FirstImpressionWidget } from "@/widgets/first-impression";
 import { AgeChangeWidget } from "@/widgets/age-change";
+import { FeedbackTickerWidget } from "@/widgets/feedback-ticker";
 
 function ChartHeading({
   title,
@@ -54,9 +55,16 @@ export function SurveyInsightsSection() {
         <Container>
           <ChartHeading
             title="Live results: Does knowing the creator change people's opinion?"
-            caption="Visitors rate each artwork twice — once before, and once after being told whether a person or an AI made it. Each bar is the average change between those two ratings - the value is calculated by assigning responses to 1-5 scale, with 'strongly disagree' = 1 and 'strongly agree' = 5. Bars above the centre line mean people judged the work more positively after finding out the creator; bars below mean they rated it more negatively. If the bars are different heights for AI and human, this implies creatorship is a factor in how people judge the work."
+            caption="Visitors rate each artwork twice — once before, and once after being told whether a person or an AI made it. Each bar is the average change between those two ratings - the value is calculated by assigning responses to 1-5 scale, with 'strongly disagree' = 1 and 'strongly agree' = 5. Bars above the centre line mean people judged the work more positively after finding out the creator; bars below mean they rated it more negatively. If the bars are different heights for AI and human, this implies AI creatorship is a factor in how people judge the work."
           />
-          <OpinionChangeWidget />
+          <Row className="g-4 align-items-stretch">
+            <Col xs={12} lg={8} className="d-flex flex-column">
+              <OpinionChangeWidget />
+            </Col>
+            <Col xs={12} lg={4} className="d-flex flex-column">
+              <FeedbackTickerWidget />
+            </Col>
+          </Row>
           <LiveDataMeta
             participantCount={participantCount}
             timestamp={fulfilledTimeStamp}
@@ -72,7 +80,7 @@ export function SurveyInsightsSection() {
             <Col xs={12} lg={6} className="d-flex flex-column">
               <ChartHeading
                 title="Live results: First impressions"
-                caption="The average scores people give while they still don't know who made each artwork (where scores are the judgements mapped onto a 1-5 scale). If the bars are similar heights for AI and human, this implies the different creatorship is not a factor in how people judge the work."
+                caption="The average scores people give while they still don't know who made each artwork (where scores are the judgements mapped onto a 1-5 scale). If the bars are similar heights for AI and human, this implies the two groups were equally favoured on aesthetics alone."
               />
               <FirstImpressionWidget />
             </Col>

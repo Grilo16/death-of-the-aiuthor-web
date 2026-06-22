@@ -15,6 +15,7 @@ export {
   selectOpinionChange,
   selectFirstImpression,
   selectAiChangeByAge,
+  selectFeedbackComments,
 } from "./model/selectors";
 
 export type {
