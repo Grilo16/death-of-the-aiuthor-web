@@ -1,6 +1,7 @@
 .landing-page {
   --lp-accent: #d4742c;
   --lp-glass: rgba(25, 25, 35, 0.78);
+  position: relative;
   max-width: 100%;
   overflow-x: hidden;
   background-color: #0a0a12;
@@ -9,6 +10,40 @@
   background-attachment: fixed;
   color: #ddd5ca;
   font-variant: small-caps;
+}
+
+/* All headers render as plain lowercase (overriding the page small-caps and
+   any capitalisation in the markup). */
+.landing-page :is(h1, h2, h3, h4, h5, h6) {
+  font-variant: normal;
+  text-transform: lowercase;
+}
+
+/* Persistent light filter over the background image. It is NOT part of any
+   animated section, so the raw (bright) background is never revealed while a
+   section fades in. */
+.landing-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: #00000077;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Sections sit above the persistent overlay. */
+.landing-page > section {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-footer-link {
+  color: #a8a8a8;
+  transition: color 0.2s ease;
+}
+
+.landing-footer-link:hover {
+  color: var(--lp-accent);
 }
 
 .landing-page a {
@@ -74,14 +109,16 @@
   object-fit: cover;
 }
 
+/* The base .landing-page::before overlay already supplies the light filter,
+   so each section overlay is shifted down one level on top of it. */
 .section-light {
-  background-color: #00000077;
+  background-color: transparent;
 }
 
 .section-dark {
-  background-color: #000000aa;
+  background-color: #00000077;
 }
 
 .section-darker {
-  background-color: #000000bb;
+  background-color: #000000aa;
 }

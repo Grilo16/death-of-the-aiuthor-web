@@ -21,7 +21,15 @@ export function SummarySection() {
                     authorship impact our perception and value of art. the
                     installation will contain both human made and ai-generated
                     visual works and the survey is best taken in-person at the
-                    event, if possible.
+                    event, if possible. Live results are shown below.
+                  </p>
+                  <p>
+                    The next showing begins{" "}
+                    <span className="landing-accent">
+                      26th June - 28th July 2026 at the Edinburgh Futures Institute.
+                    </span>
+                    <br />
+                    More details below...
                   </p>
                   <p>
                     The physical installation was first presented at
@@ -29,14 +37,6 @@ export function SummarySection() {
                     <span className="landing-accent">
                       the boardwalk, glasgow, on 27-28th june 2025.
                     </span>
-                  </p>
-                  <p>
-                    A second showing will occur in{" "}
-                    <span className="landing-accent">
-                      summer 2026 in edinburgh.
-                    </span>
-                    <br />
-                    Details to be announced...
                   </p>
 
                 <hr className="landing-divider mt-5" />

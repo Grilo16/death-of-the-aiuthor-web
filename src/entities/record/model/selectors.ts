@@ -5,6 +5,7 @@ import {
   computeOpinionChange,
   computeFirstImpression,
   computeAiChangeByAge,
+  collectFeedbackComments,
 } from "./analytics";
 
 // --- Base Selector ---
@@ -34,4 +35,10 @@ export const selectFirstImpression = createSelector(
 export const selectAiChangeByAge = createSelector(
   selectAllSubmissions,
   computeAiChangeByAge,
+);
+
+// Free-text feedback comments left by respondents.
+export const selectFeedbackComments = createSelector(
+  selectAllSubmissions,
+  collectFeedbackComments,
 );

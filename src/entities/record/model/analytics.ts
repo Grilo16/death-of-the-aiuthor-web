@@ -144,6 +144,31 @@ export function ageSortValue(label: string): number {
   return match ? parseInt(match[0], 10) : Number.MAX_SAFE_INTEGER;
 }
 
+// --- Feedback comments: free-text "leave any feedback" responses ---
+
+// The feedback prompt is a dynamic demographic key; detect it at runtime so we
+// don't hard-code the exact (long, punctuated) question string.
+export function detectFeedbackKey(submissions: Submission[]): string | null {
+  for (const s of submissions) {
+    const demographics = s.data?.demographics;
+    if (!demographics) continue;
+    const key = Object.keys(demographics).find((k) =>
+      /feedback|thoughts|musings/i.test(k),
+    );
+    if (key) return key;
+  }
+  return null;
+}
+
+// Every non-empty feedback string, trimmed, in submission order.
+export function collectFeedbackComments(submissions: Submission[]): string[] {
+  const key = detectFeedbackKey(submissions);
+  if (!key) return [];
+  return submissions
+    .map((s) => s.data?.demographics?.[key]?.trim())
+    .filter((v): v is string => !!v);
+}
+
 export function computeAiChangeByAge(
   submissions: Submission[],
 ): AiChangeByAgeDatum[] {

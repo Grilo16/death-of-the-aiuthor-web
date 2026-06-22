@@ -17,18 +17,18 @@ export function ExhibitionSection() {
             className="img-fluid mb-3 rounded-3"
           />
 
-          <h2 className="mb-1">The Exhibition</h2>
-          <h3 className="fw-normal mb-4">26th June - 28th July 2026</h3>
+          <h2 className="mb-1" style={{ textTransform: "capitalize" }}>The Exhibition</h2>
+          <h3 className="fw-normal mb-4" style={{ textTransform: "capitalize" }}>26th June - 28th July 2026</h3>
 
-          <p className="landing-accent fst-italic fw-bold mb-2">
-            Anthea Bond Exhibition Room
+          <p className="landing-accent fst-italic fw-normal mb-0" style={{ fontSize: "1.25rem", lineHeight: 1.2 }}>
+            anthea bond exhibition room
           </p>
-          <p className="landing-accent fst-italic fw-bold mb-2">
-            at Edinburgh Futures Institute
+          <p className="landing-accent fst-italic fw-normal mb-2" style={{ fontSize: "1.25rem", lineHeight: 1.2 }}>
+            at edinburgh futures institute
           </p>
           <p
             className="opacity-75 mb-4"
-            style={{ letterSpacing: "0.08em", fontSize: "1rem" }}
+            style={{ letterSpacing: "0.08em", fontSize: "0.85rem" }}
           >
             In collaboration with 'Creativity, AI, and the Human' research cluster
           </p>

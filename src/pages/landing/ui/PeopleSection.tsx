@@ -20,7 +20,7 @@ function PersonCard({ photo, name, bio }: PersonCardProps) {
       />
       <h5
         className="text-uppercase mb-3"
-        style={{ letterSpacing: "0.1em" }}
+        style={{ letterSpacing: "0.1em", fontSize: "0.95rem" }}
       >
         {name}
       </h5>
@@ -31,7 +31,7 @@ function PersonCard({ photo, name, bio }: PersonCardProps) {
 
 export function PeopleSection() {
   return (
-    <Section  hasBorder animation="fade-up" variant="container-fluid">
+    <Section bgOpacity="light" animation="fade-up" variant="container-fluid">
       <Container>
         <hr className="landing-divider mx-auto mb-5" />
 
