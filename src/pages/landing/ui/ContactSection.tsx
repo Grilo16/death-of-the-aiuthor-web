@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 
 export function ContactSection() {
   return (
-    <Section animation="fade-up" className="py-5 text-center">
+    <Section bgOpacity="light" animation="fade-up" className="py-5 text-center">
       <Container>
         <Row className="justify-content-center">
           <Col md={8} lg={6}>

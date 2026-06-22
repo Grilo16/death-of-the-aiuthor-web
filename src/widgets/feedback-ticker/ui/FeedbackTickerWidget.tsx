@@ -66,7 +66,7 @@ export function FeedbackTickerWidget() {
     <Card
       className="d-flex flex-column w-100 h-100 border-0"
       style={{
-        background: "rgba(20, 20, 30, 0.6)",
+        background: "rgba(25, 25, 25, 0.6)",
         backdropFilter: "blur(8px)",
         WebkitBackdropFilter: "blur(8px)",
         border: "1px solid rgba(255, 255, 255, 0.06)",
@@ -79,7 +79,8 @@ export function FeedbackTickerWidget() {
           style={{
             fontSize: "0.95rem",
             letterSpacing: "0.05em",
-            color: "rgba(221, 213, 202, 0.6)",
+            color: "var(--lp-accent, #d4742c)",
+            textTransform: "none",
           }}
         >
           Thoughts from the viewers (your feedback):
@@ -110,11 +111,11 @@ export function FeedbackTickerWidget() {
                 }}
                 className="mb-0"
                 style={{
-                  fontSize: "1.15rem",
+                  fontSize: "0.95rem",
                   lineHeight: 1.5,
-                  fontWeight: 300,
-                  color: "#ece6dc",
+                  color: "#a8a8a8",
                   fontVariant: "normal",
+                  letterSpacing: "0.03em",
                 }}
               >
                 <span style={{ color: "var(--lp-accent, #d4742c)" }}>“</span>

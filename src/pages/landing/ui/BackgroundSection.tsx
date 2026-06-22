@@ -1,12 +1,13 @@
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
+import { Section } from "@/shared/ui";
 
 export function BackgroundSection() {
   return (
-    <section className="py-5">
+    <Section bgOpacity="light">
       <Container>
         <Row className="justify-content-center">
           <Col md={10} lg={7}>
-            <Card className="rounded-4 border-0" style={{backgroundColor: "#000000AA", color: "#bdbdbd"}}>
+            <Card className="rounded-4 border-0" style={{backgroundColor: "#00000088", color: "#a8a8a8"}}>
               <CardBody className="p-4 p-md-5">
                 <h2 className="mb-4" style={{color:"white"}}>background</h2>
                 <p>
@@ -81,6 +82,6 @@ export function BackgroundSection() {
           </Col>
         </Row>
       </Container>
-    </section>
+    </Section>
   );
 }

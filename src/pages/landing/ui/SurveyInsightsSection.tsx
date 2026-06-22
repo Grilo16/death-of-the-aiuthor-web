@@ -15,7 +15,7 @@ function ChartHeading({
 }) {
   return (
     <>
-      <h3 className="mb-2">{title}</h3>
+      <h3 className="mb-2" style={{ textTransform: "none" }}>{title}</h3>
       <p className="opacity-75">{caption}</p>
     </>
   );
@@ -54,7 +54,7 @@ export function SurveyInsightsSection() {
       <Section animation="fade-up">
         <Container>
           <ChartHeading
-            title="Live results: Does knowing the creator change people's opinion?"
+            title="Live results: does knowing the creator change people's opinion?"
             caption="Visitors rate each artwork twice — once before, and once after being told whether a person or an AI made it. Each bar is the average change between those two ratings - the value is calculated by assigning responses to 1-5 scale, with 'strongly disagree' = 1 and 'strongly agree' = 5. Bars above the centre line mean people judged the work more positively after finding out the creator; bars below mean they rated it more negatively. If the bars are different heights for AI and human, this implies AI creatorship is a factor in how people judge the work."
           />
           <Row className="g-4 align-items-stretch">
@@ -79,14 +79,14 @@ export function SurveyInsightsSection() {
           <Row className="g-4">
             <Col xs={12} lg={6} className="d-flex flex-column">
               <ChartHeading
-                title="Live results: First impressions"
+                title="Live results: first impressions"
                 caption="The average scores people give while they still don't know who made each artwork (where scores are the judgements mapped onto a 1-5 scale). If the bars are similar heights for AI and human, this implies the two groups were equally favoured on aesthetics alone."
               />
               <FirstImpressionWidget />
             </Col>
             <Col xs={12} lg={6} className="d-flex flex-column">
               <ChartHeading
-                title="Live results: Does age impact the reaction?"
+                title="Live results: does age impact the reaction?"
                 caption="This looks only at the AI-made artworks. Each bar is an age group, showing how much their average rating changed once they learned the work was made by AI. Above the line means they liked it more after finding out; below means less."
               />
               <AgeChangeWidget />

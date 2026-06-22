@@ -41,9 +41,24 @@ export function HeroSection() {
                   tag="a"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdouV1dr2BWl_csDNWYsEufIpvi-F9XhdSpFjHUrfZZ85-wRQ/viewform?usp=dialog"
                   target="_blank"
-                  className="rounded-pill px-3 py-3 text-white border-white bg-transparent border-white"
+                  className="rounded-pill px-3 py-3 text-white border-white bg-transparent border-white d-inline-flex align-items-center justify-content-center gap-2"
                   block
                 >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10" />
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                    <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95z" />
+                  </svg>
                   Participate in the study
                 </Button>
               </CardBody>

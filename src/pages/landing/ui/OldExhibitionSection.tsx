@@ -4,7 +4,7 @@ import { Section } from "@/shared/ui";
 
 export function OldExhibitionSection() {
   return (
-    <Section bgOpacity="light">
+    <Section bgOpacity="dark">
         <Row className="justify-content-center text-center">
           <Col md={8} lg={6} >
             <img
@@ -13,7 +13,7 @@ export function OldExhibitionSection() {
               className="img-fluid rounded-3 mb-4"
             />
 
-            <h2 className="mb-1 ">The Previous Exhibition</h2>
+            <h2 className="mb-1 " style={{ textTransform: "capitalize" }}>The Previous Exhibition</h2>
             <h3 className="fw-normal mb-4">27-28th June 2025</h3>
             <p
               className="text-uppercase opacity-75 mb-2"
