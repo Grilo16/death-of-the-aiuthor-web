@@ -39,7 +39,7 @@ export function HeroSection() {
                 </p>
                 <Button
                   tag="a"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdouV1dr2BWl_csDNWYsEufIpvi-F9XhdSpFjHUrfZZ85-wRQ/viewform?usp=dialog"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSff564W2mq7Pd7eYOX_c9elRvPBMUHIElGHNXWjeAr9-ZnqAw/viewform?usp=dialoghttps://docs.google.com/forms/d/e/1FAIpQLSff564W2mq7Pd7eYOX_c9elRvPBMUHIElGHNXWjeAr9-ZnqAw/viewform?usp=dialog"
                   target="_blank"
                   className="rounded-pill px-3 py-3 text-white border-white bg-transparent border-white d-inline-flex align-items-center justify-content-center gap-2"
                   block
