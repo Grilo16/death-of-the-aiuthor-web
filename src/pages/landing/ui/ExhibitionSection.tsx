@@ -35,7 +35,9 @@ export function ExhibitionSection() {
           <Button
             outline
             tag="a"
-            href="#"
+            href="https://efi.ed.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="landing-cta rounded-pill px-5 py-2"
           >
             {"↗ "} EFI homepage
